@@ -10,7 +10,7 @@ services:
       - postgres
     ports:
       - 3000:3000
-    command: goby server.gb --bind 0.0.0.0:3000 wsgi
+    command: goby server.gb --bind localhost:3000 wsgi
 
   postgres:
     environment:
